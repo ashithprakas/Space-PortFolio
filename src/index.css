@@ -1,0 +1,10 @@
+body {
+  --text-color: white;
+  --background-color: #121212;
+
+  --social-icon-background: rgba(217, 217, 217, 0.1);
+  --social-icon-hover-background: white;
+  --social-icon-border: rgba(255, 255, 255, 0.5);
+
+  --navbar-toggle-button-color: white;
+}
