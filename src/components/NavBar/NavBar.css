@@ -4,7 +4,7 @@ nav.navbar {
   width: 100%;
   top: 0;
   z-index: 9999;
-  transition: 0.32 ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 nav.navbar.scrolled {
@@ -32,7 +32,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 
 span.navbar-social-icon-container {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 
 .social-icon a {
