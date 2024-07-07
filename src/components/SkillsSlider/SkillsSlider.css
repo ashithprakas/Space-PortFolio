@@ -65,6 +65,23 @@
 .carousel-indicators {
   margin-bottom: -3rem;
 }
+@media (min-width: 576px) {
+  .skill-sliders-container {
+    height: 1210px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .skill-sliders-container {
+    height: 266px;
+  }
+}
+
+@media (min-width: 768px) {
+  .skill-sliders-container {
+    height: 532px;
+  }
+}
 
 /* Slider Styles */
 .skill {

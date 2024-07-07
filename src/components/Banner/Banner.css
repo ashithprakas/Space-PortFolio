@@ -60,6 +60,7 @@
 
 .banner img {
   animation: bannerImageAnimation 3s linear infinite;
+  width: 100%;
 }
 
 @keyframes bannerImageAnimation {
