@@ -4,8 +4,8 @@ const Slider: React.FC<{ percentage: number }> = ({ percentage }) => {
   const circleId: string = `progressCircle${percentage}_${Math.random()}`;
   const [offset, setOffset] = useState(600);
   const [circleLength] = useState(600);
+
   useEffect(() => {
-    console.log("use effect called for ", percentage);
     const progressCircle = document.getElementById(circleId) as HTMLElement;
     const offsetValue = circleLength - (circleLength * percentage) / 100;
     setOffset(offsetValue);
