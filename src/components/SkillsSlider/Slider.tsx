@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from "react";
 
 const Slider: React.FC<{ percentage: number }> = ({ percentage }) => {
+  const circleId: string = `progressCircle${percentage}_${Math.random()}`;
   const [offset, setOffset] = useState(600);
   const [circleLength] = useState(600);
   useEffect(() => {
-    const progressCircle = document.getElementById(
-      "progressCircle"
-    ) as HTMLElement;
+    console.log("use effect called for ", percentage);
+    const progressCircle = document.getElementById(circleId) as HTMLElement;
     const offsetValue = circleLength - (circleLength * percentage) / 100;
     setOffset(offsetValue);
     progressCircle.style.transition = "stroke-dashoffset 2s ease-in-out";
-  });
+  }, [percentage]);
 
   return (
     <div className="skill-meter-container">
@@ -37,7 +37,7 @@ const Slider: React.FC<{ percentage: number }> = ({ percentage }) => {
           </linearGradient>
         </defs>
         <circle
-          id="progressCircle"
+          id={circleId}
           cx="100"
           cy="100"
           r="90"
