@@ -1,0 +1,96 @@
+/*Skills*/
+
+.skill-container {
+  padding: 0px 0px 50px 0;
+  position: relative;
+}
+
+.skill-box {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -50px;
+}
+
+.skill-container h2 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+.skill-container p {
+  color: #bbbbbb;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5rem;
+  margin: 14px 0 75px 0;
+}
+
+.skill-slider {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slider-item {
+  display: flex;
+  gap: 20%;
+}
+.background-image-left {
+  position: absolute;
+  top: 20%;
+  bottom: 0;
+  width: 40%;
+  z-index: -4;
+}
+
+/* Slider Styles */
+.skill {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.outer {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+  padding: 20px;
+}
+
+.inner {
+  height: 160px;
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+.number {
+  font-weight: 600;
+  color: #555;
+}
+
+.skill-container circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+}
+
+.skill-container svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.skill-container {
+  position: relative;
+}

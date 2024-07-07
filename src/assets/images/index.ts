@@ -4,6 +4,7 @@ import LinkedInIcon from "./nav-icon1.svg";
 import FaceBookIcon from "./nav-icon2.svg";
 import InstagramIcon from "./nav-icon3.svg";
 import HeaderIcon from "./header-img.svg";
+import GradientBackground1 from "./color-sharp.png";
 
 export {
   Logo,
@@ -12,4 +13,5 @@ export {
   InstagramIcon,
   HeaderIcon,
   LeftArrow,
+  GradientBackground1,
 };
