@@ -13,7 +13,7 @@ const Slider: React.FC<{ percentage: number }> = ({ percentage }) => {
   });
 
   return (
-    <div className="skill-container">
+    <div className="skill-meter-container">
       <div className="skill">
         <div className="outer">
           <div className="inner">

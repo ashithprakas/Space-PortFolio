@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import { SkillsSliderTemplate } from "../../models/SkillsSlider.models";
@@ -6,12 +5,6 @@ import Slider from "./Slider";
 import { GradientBackground1 } from "../../assets/images";
 
 const SkillsSlider = () => {
-  const [index, setIndex] = useState(0);
-
-  const handleSelect = (selectedIndex: number) => {
-    setIndex(selectedIndex);
-  };
-
   const skillsTemplateArray: SkillsSliderTemplate[] = [
     { skillName: "Web Developer", percentage: 70 },
     { skillName: "Angular", percentage: 80 },
@@ -40,20 +33,22 @@ const SkillsSlider = () => {
                 incidunt? Reprehenderit ex voluptates ipsam similique.
               </p>
             </div>
-            <Carousel className="skill-slider">
+            <Carousel>
               {skillsTemplate.map((row) => {
                 return (
-                  <Carousel.Item interval={10000}>
-                    <div className="slider-item">
-                      {row.map((col) => {
-                        return (
-                          <div className="skill-item">
-                            <Slider percentage={col.percentage} />
-                            <h5>{col.skillName}</h5>
-                          </div>
-                        );
-                      })}
-                    </div>
+                  <Carousel.Item interval={100000}>
+                    <Container className="">
+                      <Row className="skill-sliders-container">
+                        {row.map((col) => {
+                          return (
+                            <Col xs={12} md={6} xl={4} className="Skill-meter">
+                              <Slider percentage={col.percentage} />
+                              <h5>{col.skillName}</h5>
+                            </Col>
+                          );
+                        })}
+                      </Row>
+                    </Container>
                   </Carousel.Item>
                 );
               })}

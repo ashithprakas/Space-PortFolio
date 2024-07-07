@@ -43,11 +43,32 @@
   width: 40%;
   z-index: -4;
 }
+.Skill-meter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Carousel styles */
+.carousel-control-next {
+  right: -50px;
+}
+
+.carousel-control-prev {
+  left: -50px;
+}
+
+.carousel-container {
+  display: flex;
+}
+.carousel-indicators {
+  margin-bottom: -3rem;
+}
 
 /* Slider Styles */
 .skill {
-  width: 200px;
-  height: 200px;
+  padding: 20px;
   position: relative;
 }
 
@@ -79,18 +100,20 @@
   color: #555;
 }
 
-.skill-container circle {
+.skill-meter-container circle {
   fill: none;
   stroke: url(#GradientColor);
   stroke-width: 20px;
 }
 
-.skill-container svg {
+.skill-meter-container svg {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 20px;
+  left: 20px;
 }
 
-.skill-container {
+.skill-meter-container {
   position: relative;
+  height: 240px;
+  width: 240px;
 }
