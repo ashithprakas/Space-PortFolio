@@ -9,7 +9,10 @@ nav.navbar {
 
 nav.navbar.scrolled {
   padding: 0 0;
-  background-color: var(--background-color);
+  background: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  height: 100px;
 }
 
 nav.navbar a.navbar-brand {

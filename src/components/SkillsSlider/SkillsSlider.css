@@ -11,6 +11,7 @@
   text-align: center;
   padding: 60px 50px;
   margin-top: -50px;
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.384);
 }
 
 .skill-container h2 {
