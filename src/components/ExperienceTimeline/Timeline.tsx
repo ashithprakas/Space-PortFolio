@@ -1,20 +1,19 @@
-import { FC, useEffect } from "react";
+import { FC, useEffect, useState } from "react";
 import { TimeLineTemplate } from "../../enumerations/ExperienceTimeline.enum";
 import "./ExperienceTimeline.css";
 
 const Timeline: FC<{ timeLineTemplate: TimeLineTemplate[] }> = ({
   timeLineTemplate,
 }) => {
+  const [containerHeight, setContainerHeight] = useState(0);
   useEffect(() => {
     const timeLineEnrtyElements = document.querySelectorAll(
       ".timeline-entry-hidden"
     );
 
-    console.log(timeLineEnrtyElements);
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(entry);
           if (entry.isIntersecting) {
             entry.target.classList.add("timeline-entry-show");
           } else {
@@ -22,16 +21,18 @@ const Timeline: FC<{ timeLineTemplate: TimeLineTemplate[] }> = ({
           }
         });
       },
-      { threshold: 0.7, rootMargin: "-50px" }
+      { threshold: 0.2, rootMargin: "-100px" }
     );
     timeLineEnrtyElements.forEach((element) => {
-      console.log("observing element ", element);
+      setContainerHeight(
+        containerHeight + element.getBoundingClientRect().height
+      );
       observer.observe(element);
     });
 
     return () => {
-      console.log("unobserving items");
       timeLineEnrtyElements.forEach((item) => observer.unobserve(item));
+      setContainerHeight(0);
     };
   }, [timeLineTemplate]);
 
@@ -39,7 +40,10 @@ const Timeline: FC<{ timeLineTemplate: TimeLineTemplate[] }> = ({
     <div>
       <div className="responsive-timeline-container">
         <div className="timeline">
-          <ul className="timeline-container">
+          <ul
+            className="timeline-container"
+            style={{ height: containerHeight }}
+          >
             {timeLineTemplate.map((template, index) => {
               return (
                 <li key={index} className="timeline-entry-hidden">

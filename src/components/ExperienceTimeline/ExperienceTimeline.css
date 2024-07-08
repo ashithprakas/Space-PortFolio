@@ -41,6 +41,7 @@
   );
   left: calc(50% - 2px);
   border-radius: 10px;
+  top: 0;
 }
 .timeline ul {
   list-style-type: none;
