@@ -53,11 +53,11 @@
 
 /* Carousel styles */
 .carousel-control-next {
-  right: -50px;
+  right: -8%;
 }
 
 .carousel-control-prev {
-  left: -50px;
+  left: -8%;
 }
 
 .carousel-container {
@@ -66,21 +66,21 @@
 .carousel-indicators {
   margin-bottom: -3rem;
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .skill-sliders-container {
     height: 1210px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (max-width: 1200px) {
   .skill-sliders-container {
-    height: 266px;
+    height: 466px;
   }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .skill-sliders-container {
-    height: 532px;
+    height: 900px;
   }
 }
 
@@ -91,8 +91,8 @@
 }
 
 .outer {
-  height: 200px;
-  width: 200px;
+  height: 160px;
+  width: 160px;
   border-radius: 50%;
   box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(0, 0, 0, 0.7);
@@ -100,8 +100,8 @@
 }
 
 .inner {
-  height: 160px;
-  width: 160px;
+  height: 120px;
+  width: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,6 +132,6 @@
 
 .skill-meter-container {
   position: relative;
-  height: 240px;
-  width: 240px;
+  height: 200px;
+  width: 200px;
 }

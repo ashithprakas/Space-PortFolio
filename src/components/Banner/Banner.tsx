@@ -56,10 +56,13 @@ const Banner = () => {
               </span>
             </h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
-              nostrum recusandae dolorum illo ad itaque officia explicabo! Quos
-              cum molestias necessitatibus nemo iure ducimus veniam obcaecati,
-              minus consequuntur. Pariatur, voluptatibus.
+              I am a Frontend Developer with 2 years of experience. I specialize
+              in Angular, creating dynamic and responsive web applications with
+              a focus on user experience and performance. I am currently
+              expanding my expertise by learning React to stay at the forefront
+              of frontend development trends. My goal is to continuously improve
+              and innovate, contributing to impactful projects and connecting
+              with like-minded professionals in the tech industry.
             </p>
             <button onClick={() => console.log("connect")}>
               <ArrowRightCircle />

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 
 const Slider: React.FC<{ percentage: number }> = ({ percentage }) => {
   const circleId: string = `progressCircle${percentage}_${Math.random()}`;
-  const [offset, setOffset] = useState(600);
-  const [circleLength] = useState(600);
+  const [offset, setOffset] = useState(430);
+  const [circleLength] = useState(430);
 
   useEffect(() => {
     const progressCircle = document.getElementById(circleId) as HTMLElement;
@@ -27,8 +27,8 @@ const Slider: React.FC<{ percentage: number }> = ({ percentage }) => {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
-        width="200px"
-        height="200px"
+        width="160px"
+        height="160px"
       >
         <defs>
           <linearGradient id="GradientColor">
@@ -38,9 +38,9 @@ const Slider: React.FC<{ percentage: number }> = ({ percentage }) => {
         </defs>
         <circle
           id={circleId}
-          cx="100"
-          cy="100"
-          r="90"
+          cx="80"
+          cy="80"
+          r="70"
           strokeLinecap="round"
           style={{
             strokeDasharray: circleLength,

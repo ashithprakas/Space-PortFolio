@@ -21,8 +21,8 @@ const SkillsSlider = () => {
   // Split skillsTemplateArray into rows of 3 items each
   const skillsTemplate = skillsTemplateArray.reduce(() => {
     return Array.from(
-      { length: Math.ceil(skillsTemplateArray.length / 3) },
-      (_, index) => skillsTemplateArray.slice(index * 3, index * 3 + 3)
+      { length: Math.ceil(skillsTemplateArray.length / 4) },
+      (_, index) => skillsTemplateArray.slice(index * 4, index * 4 + 4)
     );
   }, []);
 
@@ -59,23 +59,17 @@ const SkillsSlider = () => {
           <Col>
             <div>
               <h2>Skills</h2>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
-                obcaecati nihil minima eaque dignissimos, asperiores in est
-                voluptates quidem dolorem, rem, blanditiis corporis adipisci
-                incidunt? Reprehenderit ex voluptates ipsam similique.
-              </p>
             </div>
             <Carousel ref={carouselRef} fade>
               {skillsTemplate.map((row, index) => (
                 <Carousel.Item
-                  interval={8000}
+                  interval={81000000}
                   className={index === activeIndex ? "active" : ""}
                 >
                   <Container>
                     <Row className="skill-sliders-container">
                       {row.map((col) => (
-                        <Col xs={12} md={6} xl={4} className="Skill-meter">
+                        <Col xs={15} md={6} xl={3} className="Skill-meter">
                           {index === activeIndex && (
                             <>
                               <Slider percentage={col.percentage} />
