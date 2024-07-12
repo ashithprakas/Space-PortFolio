@@ -1,5 +1,6 @@
 .experience-timeline-container {
   padding: 100px 0 100px 0;
+  overflow: hidden;
 }
 .experience-header {
   font-size: 45px;
