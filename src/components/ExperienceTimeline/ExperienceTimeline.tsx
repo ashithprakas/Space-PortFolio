@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import Timeline from "./Timeline";
-import { TimeLineTemplate } from "../../enumerations/ExperienceTimeline.enum";
+import { TimeLineTemplate } from "../../models/ExperienceTimeline.models";
 import { GradientBackground2 } from "../../assets/images";
 import "./ExperienceTimeline.css";
 

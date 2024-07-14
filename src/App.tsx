@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner";
 import SkillsSlider from "./components/SkillsSlider/SkillsSlider";
 import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
 import Projects from "./components/Projects/Projects";
+import ContactForm from "./components/ContactForm/ContactForm";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SkillsSlider />
       <ExperienceTimeline />
       <Projects />
+      <ContactForm />
     </>
   );
 }

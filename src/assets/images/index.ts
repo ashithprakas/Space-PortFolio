@@ -1,4 +1,3 @@
-import LeftArrow from "./arrow1.svg";
 import Logo from "./logo.svg";
 import LinkedInIcon from "./nav-icon1.svg";
 import FaceBookIcon from "./nav-icon2.svg";
@@ -9,6 +8,7 @@ import GradientBackground2 from "./color-sharp2.png";
 import ProjectUrl1 from "./project-img1.png";
 import ProjectUrl2 from "./project-img2.png";
 import ProjectUrl3 from "./project-img3.png";
+import ContactImage from "./contact-img.svg";
 
 export {
   Logo,
@@ -16,10 +16,10 @@ export {
   FaceBookIcon,
   InstagramIcon,
   HeaderIcon,
-  LeftArrow,
   GradientBackground1,
   GradientBackground2,
   ProjectUrl1,
   ProjectUrl2,
   ProjectUrl3,
+  ContactImage,
 };

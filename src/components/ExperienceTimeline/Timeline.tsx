@@ -1,5 +1,5 @@
 import { FC, useEffect, useState } from "react";
-import { TimeLineTemplate } from "../../enumerations/ExperienceTimeline.enum";
+import { TimeLineTemplate } from "../../models/ExperienceTimeline.models";
 
 const Timeline: FC<{ timeLineTemplate: TimeLineTemplate[] }> = ({
   timeLineTemplate,
