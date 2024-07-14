@@ -21,7 +21,7 @@ nav.navbar a.navbar-brand {
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
-  color: var(--text-color) !important;
+  color: white !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -41,14 +41,14 @@ span.navbar-social-icon-container {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background-color: var(--social-icon-background);
+  background-color: rgba(217, 217, 217, 0.1);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid var(--social-icon-border);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .social-icon a::before {
@@ -56,7 +56,7 @@ span.navbar-social-icon-container {
   width: 42px;
   height: 42px;
   position: absolute;
-  background-color: var(--social-icon-hover-background);
+  background-color: white;
   border-radius: 50%;
   transform: scale(0);
   transition: 0.3s ease-in-out;
@@ -79,8 +79,8 @@ span.navbar-social-icon-container {
 
 .navbar-social-icon-container button {
   font-weight: 700;
-  color: var(--text-color);
-  border: 1px solid var(--social-icon-border);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 18px 34px;
   font-size: 18px;
   margin-left: 18px;
@@ -94,7 +94,7 @@ span.navbar-social-icon-container {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: var(--social-icon-hover-background);
+  background-color: white;
   left: 0;
   top: 0;
   z-index: -1;
@@ -102,7 +102,7 @@ span.navbar-social-icon-container {
 }
 
 .navbar-social-icon-container button:hover {
-  color: var(--background-color);
+  color: #121212;
 }
 
 nav.navbar .navbar-toggler:active,
@@ -116,7 +116,7 @@ nav.navbar .navbar-toggler-icon {
   height: 17px;
   background-image: none;
   position: relative;
-  border-bottom: 2px solid var(--navbar-toggle-button-color);
+  border-bottom: 2px solid white;
   transition: all 300ms linear;
   top: -2px;
 }
@@ -126,7 +126,7 @@ nav.navbar .navbar-toggler-icon:before {
   width: 24px;
   position: absolute;
   height: 2px;
-  background-color: var(--navbar-toggle-button-color);
+  background-color: white;
   top: 0;
   left: 0;
   content: "";
@@ -139,25 +139,25 @@ nav.navbar .navbar-toggler-icon:after {
 
 nav.navbar :not(.collapsed) .navbar-toggler-icon:after {
   transform: rotate(45deg);
-  background-color: var(--navbar-toggle-button-color);
+  background-color: white;
   height: 2px;
 }
 
 nav.navbar .collapsed .navbar-toggler-icon:after {
   transform: rotate(0deg);
-  background-color: var(--navbar-toggle-button-color);
+  background-color: white;
   height: 2px;
 }
 
 nav.navbar :not(.collapsed) .navbar-toggler-icon:before {
   transform: translateY(8px) rotate(-45deg);
-  background-color: var(--navbar-toggle-button-color);
+  background-color: white;
   height: 2px;
 }
 
 nav.navbar .collapsed .navbar-toggler-icon:before {
   transform: rotate(0deg);
-  background-color: var(--navbar-toggle-button-color);
+  background-color: white;
   height: 2px;
 }
 
@@ -166,5 +166,5 @@ nav.navbar :not(.collapsed) .navbar-toggler-icon {
 }
 
 nav.navbar .collapsed .navbar-toggler-icon {
-  border-color: var(--navbar-toggle-button-color);
+  border-color: white;
 }

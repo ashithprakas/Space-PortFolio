@@ -11,6 +11,7 @@ import {
   InstagramIcon,
   LinkedInIcon,
 } from "../../assets/images";
+import "./NavBar.css";
 
 const NavBar = () => {
   const [activeLink, setActiveLink] = useState(NavBarLinkTypes.Home);

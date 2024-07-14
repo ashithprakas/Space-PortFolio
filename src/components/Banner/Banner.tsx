@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { HeaderIcon } from "../../assets/images";
 import { useEffect, useState } from "react";
 import { ArrowRightCircle } from "react-bootstrap-icons";
+import "./Banner.css";
 
 const Banner = () => {
   const toRotate = ["Web Developer ", "Angular Developer ", "React Developer "];

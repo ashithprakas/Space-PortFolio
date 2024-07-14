@@ -1,7 +1,4 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
-@import url("./components/Banner/Banner.css");
-@import url("./components/NavBar/NavBar.css");
-@import url("./components/SkillsSlider/SkillsSlider.css");
 
 /* Fonts */
 @font-face {
@@ -40,8 +37,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: var(--background-color) !important;
-  color: var(--text-color) !important;
+  background-color: #121212 !important;
+  color: white !important;
   font-family: "Centra", sans-serif !important;
 }
 

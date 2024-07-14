@@ -9,7 +9,7 @@
 }
 .background-image-right {
   position: absolute;
-  top: 75%;
+  top: 50%;
   bottom: 0;
   width: 40%;
   z-index: -4;

@@ -4,6 +4,7 @@ import Slider from "./Slider";
 import { GradientBackground1 } from "../../assets/images";
 import { useEffect, useRef, useState } from "react";
 import { SkillsSliderTemplate } from "../../models/SkillsSlider.models";
+import "./SkillsSlider.css";
 
 const SkillsSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);

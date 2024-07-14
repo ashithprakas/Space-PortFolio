@@ -34,7 +34,7 @@ const Projects = () => {
                   <Nav.Link eventKey="third">Tab 3</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="four">Tab 3</Nav.Link>
+                  <Nav.Link eventKey="four">Tab 4</Nav.Link>
                 </Nav.Item>
               </Nav>
               <Tab.Content>
