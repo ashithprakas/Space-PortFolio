@@ -27,7 +27,7 @@ const Projects = () => {
     );
   }, [noOfPanels]);
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <Container>
         <Row>
           <Col>

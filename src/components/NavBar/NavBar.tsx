@@ -86,12 +86,14 @@ const NavBar = () => {
                 );
               })}
             </div>
-            <button
-              className="lets-connect-button"
-              onClick={() => console.log("lets connect")}
-            >
-              Lets Connect
-            </button>
+            <a href="#connect">
+              <button
+                className="lets-connect-button"
+                onClick={() => console.log("lets connect")}
+              >
+                Lets Connect
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

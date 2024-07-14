@@ -56,7 +56,7 @@ const SkillsSlider = () => {
   }, []);
 
   return (
-    <section className="skill-container">
+    <section className="skill-container" id="skills">
       <Container className="skill-box">
         <Row>
           <Col>
