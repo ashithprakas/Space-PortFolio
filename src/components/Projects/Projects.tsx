@@ -4,8 +4,28 @@ import { ProjectTemplate } from "../../models/Projects.models";
 import ProjectCard from "./ProjectCard";
 import { GradientBackground1 } from "../../assets/images";
 import "./Projects.css";
+import { useEffect, useState } from "react";
 
 const Projects = () => {
+  const [noOfPanels, setNoOfPanels] = useState(0);
+  const itemsPerPage: number = 3;
+  const [projectsTemplate, setProjectTemplate] =
+    useState<ProjectTemplate[][]>();
+
+  useEffect(() => {
+    setNoOfPanels(Math.ceil(projectsArray.length / itemsPerPage));
+
+    setProjectTemplate(
+      projectsArray.reduce(() => {
+        return Array.from({ length: Math.ceil(noOfPanels) }, (_, index) => {
+          return projectsArray.slice(
+            index * itemsPerPage,
+            index * itemsPerPage + itemsPerPage
+          );
+        });
+      }, [])
+    );
+  }, [noOfPanels]);
   return (
     <section className="projects">
       <Container>
@@ -18,37 +38,39 @@ const Projects = () => {
               officiis. Nihil odit aliquam molestias quae, voluptatem et sit
               omnis maxime quia!
             </p>
-            <TabContainer id="projects-tab" defaultActiveKey="first">
+            <TabContainer id="projects-tab" defaultActiveKey="1">
               <Nav
                 variant="pills"
                 className="nav-pills mb-5 justify-content-center align-items-center"
                 id="pills-tab"
               >
-                <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Nav.Link eventKey="four">Tab 4</Nav.Link>
-                </Nav.Item>
+                {Array.from({ length: noOfPanels }, (_, index) => {
+                  return (
+                    <Nav.Item>
+                      <Nav.Link eventKey={index + 1}>Tab {index + 1}</Nav.Link>
+                    </Nav.Item>
+                  );
+                })}
               </Nav>
               <Tab.Content>
-                <Tab.Pane eventKey="first">
-                  <Row>
-                    {projects.map((project, index) => {
-                      return (
-                        <ProjectCard key={index} projectTemplate={project} />
-                      );
-                    })}
-                  </Row>
-                </Tab.Pane>
-                <Tab.Pane eventKey="second"></Tab.Pane>
-                <Tab.Pane eventKey="third"></Tab.Pane>
+                {projectsTemplate?.map((subTemplate, index) => {
+                  return (
+                    <Tab.Pane eventKey={index + 1}>
+                      {
+                        <Row>
+                          {subTemplate.map((project, subindex) => {
+                            return (
+                              <ProjectCard
+                                projectTemplate={project}
+                                key={subindex + 1}
+                              />
+                            );
+                          })}
+                        </Row>
+                      }
+                    </Tab.Pane>
+                  );
+                })}
               </Tab.Content>
             </TabContainer>
           </Col>
@@ -64,49 +86,69 @@ const Projects = () => {
 };
 
 export default Projects;
-const projects: ProjectTemplate[] = [
+const projectsArray: ProjectTemplate[] = [
   {
-    title: "Business Startup",
+    title: "Business Startup1",
     description: "Design and development",
     imageUrl: ProjectUrl1,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup2",
     description: "Design and development",
     imageUrl: ProjectUrl2,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup3",
     description: "Design and development",
     imageUrl: ProjectUrl3,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup4",
     description: "Design and development",
     imageUrl: ProjectUrl1,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup5",
     description: "Design and development",
     imageUrl: ProjectUrl2,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup6",
     description: "Design and development",
     imageUrl: ProjectUrl3,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup7",
     description: "Design and development",
     imageUrl: ProjectUrl1,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup8",
     description: "Design and development",
     imageUrl: ProjectUrl2,
   },
   {
-    title: "Business Startup",
+    title: "Business Startup9",
+    description: "Design and development",
+    imageUrl: ProjectUrl3,
+  },
+  {
+    title: "Business Startup10",
+    description: "Design and development",
+    imageUrl: ProjectUrl1,
+  },
+  {
+    title: "Business Startup11",
+    description: "Design and development",
+    imageUrl: ProjectUrl2,
+  },
+  {
+    title: "Business Startup12",
+    description: "Design and development",
+    imageUrl: ProjectUrl3,
+  },
+  {
+    title: "Business Startup13",
     description: "Design and development",
     imageUrl: ProjectUrl3,
   },
