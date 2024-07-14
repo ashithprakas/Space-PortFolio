@@ -223,11 +223,11 @@
   }
 
   .timeline-entry-hidden:nth-child(even) {
-    transform: translateX(100%) !important;
+    transform: translateX(50%) !important;
   }
 
   .timeline-entry-hidden:nth-child(odd) {
-    transform: translateX(100%) !important;
+    transform: translateX(50%) !important;
   }
 
   .timeline-entry-show:nth-child(odd) {

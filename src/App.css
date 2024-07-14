@@ -1,7 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url("./components/Banner/Banner.css");
 @import url("./components/NavBar/NavBar.css");
-@import url("./components//SkillsSlider/SkillsSlider.css");
+@import url("./components/SkillsSlider/SkillsSlider.css");
 
 /* Fonts */
 @font-face {

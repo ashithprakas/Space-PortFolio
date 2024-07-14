@@ -3,6 +3,7 @@ import "./App.css";
 import Banner from "./components/Banner/Banner";
 import SkillsSlider from "./components/SkillsSlider/SkillsSlider";
 import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Banner />
       <SkillsSlider />
       <ExperienceTimeline />
+      <Projects />
     </>
   );
 }
