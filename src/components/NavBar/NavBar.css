@@ -1,5 +1,5 @@
 nav.navbar {
-  padding: 18px 0;
+  padding: 28px;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -13,6 +13,7 @@ nav.navbar.scrolled {
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   height: 100px;
+  padding: 28px;
 }
 
 nav.navbar a.navbar-brand {

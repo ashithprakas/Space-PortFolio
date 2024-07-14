@@ -5,6 +5,7 @@ import SkillsSlider from "./components/SkillsSlider/SkillsSlider";
 import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeline";
 import Projects from "./components/Projects/Projects";
 import ContactForm from "./components/ContactForm/ContactForm";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <ExperienceTimeline />
       <Projects />
       <ContactForm />
+      <Footer />
     </>
   );
 }

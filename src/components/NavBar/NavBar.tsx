@@ -51,7 +51,7 @@ const NavBar = () => {
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container>
+      <Container fluid>
         <Navbar.Brand href="#home">
           <img src={Logo} alt="" />
         </Navbar.Brand>
