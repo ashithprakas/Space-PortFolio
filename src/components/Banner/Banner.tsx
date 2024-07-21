@@ -65,10 +65,12 @@ const Banner = () => {
               and innovate, contributing to impactful projects and connecting
               with like-minded professionals in the tech industry.
             </p>
-            <button onClick={() => console.log("connect")}>
-              <ArrowRightCircle />
-              Let's Connect
-            </button>
+            <a href="#connect">
+              <button onClick={() => console.log("connect")}>
+                <ArrowRightCircle />
+                Let's Connect
+              </button>
+            </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <img src={HeaderIcon} alt="header image" />
