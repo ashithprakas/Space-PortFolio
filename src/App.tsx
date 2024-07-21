@@ -6,10 +6,12 @@ import ExperienceTimeline from "./components/ExperienceTimeline/ExperienceTimeli
 import Projects from "./components/Projects/Projects";
 import ContactForm from "./components/ContactForm/ContactForm";
 import Footer from "./components/Footer/Footer";
+import Loader from "./components/Loader/Loader";
 
 function App() {
   return (
     <>
+      <Loader />
       <NavBar />
       <Banner />
       <SkillsSlider />
