@@ -1,16 +1,9 @@
 import { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavBarLinkTypes } from "../../enumerations/NavBar.enums";
-import {
-  NavBarLinkTemplate,
-  NavBarSocialsTemplate,
-} from "../../models/NavBar.models";
-import {
-  Logo,
-  LinkedInIcon,
-  GitHubIcon,
-  HackerRankIcon,
-} from "../../assets/images";
+import { NavBarLinkTemplate } from "../../models/NavBar.models";
+import { Logo } from "../../assets/images";
+import { socialsTemplate } from "../../Data/DataTemplates";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -21,12 +14,6 @@ const NavBar = () => {
     { label: "Home", href: "#home", type: NavBarLinkTypes.Home },
     { label: "Skills", href: "#skills", type: NavBarLinkTypes.Skills },
     { label: "Projects", href: "#projects", type: NavBarLinkTypes.Projects },
-  ];
-
-  const navBarSocialsTemplate: NavBarSocialsTemplate[] = [
-    { src: LinkedInIcon, href: "" },
-    { src: GitHubIcon, href: "" },
-    { src: HackerRankIcon, href: "" },
   ];
 
   useEffect(() => {
@@ -76,7 +63,7 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-social-icon-container">
             <div className="social-icon">
-              {navBarSocialsTemplate.map((template) => {
+              {socialsTemplate.map((template) => {
                 return (
                   <a href={template.href}>
                     <img src={template.src} alt="" />

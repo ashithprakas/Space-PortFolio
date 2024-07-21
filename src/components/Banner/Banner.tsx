@@ -3,9 +3,10 @@ import { HeaderIcon } from "../../assets/images";
 import { useEffect, useState } from "react";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import "./Banner.css";
+import { banerIntroduction } from "../../Data/DataTemplates";
 
 const Banner = () => {
-  const toRotate = ["Web Developer ", "Angular Developer ", "React Developer "];
+  const toRotate = banerIntroduction.tagLines;
   const [loopNumber, setLoopNumber] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [tagLineText, setTagLineText] = useState("");
@@ -51,20 +52,12 @@ const Banner = () => {
           <Col xs={12} md={6} xl={7}>
             <span className="tag-line">Welcome to my Portfolio</span>
             <h1>
-              {`Hi I'm Ashith`}{" "}
+              {`Hi I'm ${banerIntroduction.name}`}{" "}
               <span className="txt-rotate">
                 <span className="wrap">{tagLineText}</span>
               </span>
             </h1>
-            <p>
-              I am a Frontend Developer with 2 years of experience. I specialize
-              in Angular, creating dynamic and responsive web applications with
-              a focus on user experience and performance. I am currently
-              expanding my expertise by learning React to stay at the forefront
-              of frontend development trends. My goal is to continuously improve
-              and innovate, contributing to impactful projects and connecting
-              with like-minded professionals in the tech industry.
-            </p>
+            <p>{banerIntroduction.introduction}</p>
             <a href="#connect">
               <button onClick={() => console.log("connect")}>
                 <ArrowRightCircle />

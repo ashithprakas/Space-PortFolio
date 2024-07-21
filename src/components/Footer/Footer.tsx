@@ -1,11 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import "./Footer.css";
-import {
-  FooterBackground,
-  GitHubIcon,
-  HackerRankIcon,
-  LinkedInIcon,
-} from "../../assets/images";
+import { FooterBackground } from "../../assets/images";
+import { personalInfo, socialsTemplate } from "../../Data/DataTemplates";
 
 const Footer = () => {
   return (
@@ -19,23 +15,21 @@ const Footer = () => {
             <Col className="d-flex justify-content-center">
               <div className="footer-info-container">
                 <div className="footer-headings ">Email</div>
-                <div className="footer-content">ashith.prakas@gmail.com</div>
-                <div className="footer-content">+91 8129088867</div>
+                <div className="footer-content">{personalInfo.email}</div>
+                <div className="footer-content">{personalInfo.Phone}</div>
               </div>
             </Col>
             <Col className="d-flex justify-content-center">
               <div className="footer-info-container">
                 <div className="footer-headings ">Social</div>
                 <div className="social-icon d-flex align-items-center justify-content-center">
-                  <a href="">
-                    <img src={LinkedInIcon} alt="" />
-                  </a>
-                  <a href="">
-                    <img src={GitHubIcon} alt="" />
-                  </a>
-                  <a href="">
-                    <img src={HackerRankIcon} alt="" />
-                  </a>
+                  {socialsTemplate.map((template) => {
+                    return (
+                      <a href={template.href}>
+                        <img src={template.src} alt="" />
+                      </a>
+                    );
+                  })}
                 </div>
               </div>
             </Col>
@@ -48,16 +42,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-  /* <Container>
-        <Row>
-          <Col sm={6} className="content-center">
-            <img src={Logo} alt="" />
-          </Col>
-          <Col sm={6} className="text-center text-sm-end">
-            
-          </Col>
-        </Row>
-      </Container> */
-}
