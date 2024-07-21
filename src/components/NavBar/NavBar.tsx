@@ -7,9 +7,9 @@ import {
 } from "../../models/NavBar.models";
 import {
   Logo,
-  FaceBookIcon,
-  InstagramIcon,
   LinkedInIcon,
+  GitHubIcon,
+  HackerRankIcon,
 } from "../../assets/images";
 import "./NavBar.css";
 
@@ -25,8 +25,8 @@ const NavBar = () => {
 
   const navBarSocialsTemplate: NavBarSocialsTemplate[] = [
     { src: LinkedInIcon, href: "" },
-    { src: FaceBookIcon, href: "" },
-    { src: InstagramIcon, href: "" },
+    { src: GitHubIcon, href: "" },
+    { src: HackerRankIcon, href: "" },
   ];
 
   useEffect(() => {
@@ -39,13 +39,11 @@ const NavBar = () => {
     };
     window.addEventListener("scroll", onScroll);
     return () => {
-      console.log("removeing scroll listeners");
       window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
   const onUpdateActiveLink = (activeLinkType: NavBarLinkTypes) => {
-    console.log("updating active link to ", activeLinkType);
     setActiveLink(activeLinkType);
   };
 
