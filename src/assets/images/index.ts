@@ -9,6 +9,7 @@ import ProjectUrl1 from "./project-img1.png";
 import ProjectUrl2 from "./project-img2.png";
 import ProjectUrl3 from "./project-img3.png";
 import ContactImage from "./contact-img.svg";
+import FooterBackground from "./footer-bg.png";
 
 export {
   Logo,
@@ -22,4 +23,5 @@ export {
   ProjectUrl2,
   ProjectUrl3,
   ContactImage,
+  FooterBackground,
 };

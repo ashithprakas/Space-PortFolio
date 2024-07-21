@@ -1,7 +1,41 @@
 footer {
-  background-image: url(../../assets/images/footer-bg.png);
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
   padding: 40px;
+  position: relative;
+}
+
+.get-in-touch {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-headings {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(74, 47, 189);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer-content {
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.footer-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer-image-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
 }
