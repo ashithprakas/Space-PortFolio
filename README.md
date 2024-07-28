@@ -59,4 +59,4 @@ Technologies used in the project:
 *   <a href="https://youtu.be/hYv6BM2fWd8?si=nxFEitIrl_AtV-pf">Webdecoded</a> for the design inspiration and tutorials
 *   <a href="https://react.dev/">React</a> for the powerful JavaScript library.
 *   <a href="https://react-bootstrap.netlify.app/">Bootstrap</a>  for the responsive grid system and prebuilt components.
-*   <a href="https://github.com/davidhu2000/react-spinners">Bootstrap</a>  for the prebuild loading spinner components.
+*   <a href="https://github.com/davidhu2000/react-spinners">React Spinner</a>  for the prebuild loading spinner components.
