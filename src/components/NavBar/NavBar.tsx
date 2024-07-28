@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavBarLinkTypes } from "../../enumerations/NavBar.enums";
 import { NavBarLinkTemplate } from "../../models/NavBar.models";
-import { Logo } from "../../assets/images";
+import { ResumeIcon } from "../../assets/images";
 import { socialsTemplate } from "../../Data/DataTemplates";
 import "./NavBar.css";
 
@@ -37,9 +37,6 @@ const NavBar = () => {
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
       <Container fluid>
-        <Navbar.Brand href="#home">
-          <img src={Logo} alt="" />
-        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
@@ -76,7 +73,8 @@ const NavBar = () => {
                 className="lets-connect-button"
                 onClick={() => console.log("lets connect")}
               >
-                Lets Connect
+                <div>Download Resume</div>
+                <img src={ResumeIcon} alt="" />
               </button>
             </a>
           </span>

@@ -70,13 +70,15 @@ export const timeLineTemplate: TimeLineTemplate[] = [
 
 export const projectsArray: ProjectTemplate[] = [
   {
-    title: "Business Startup1",
-    description: "Design and development",
+    title: "Space Portfolio",
+    description:
+      "Desingned a space themed portfolio showcasing my skills and experiences",
     imageUrl: ProjectUrl1,
   },
   {
-    title: "Business Startup1",
-    description: "Design and development",
+    title: "Solar System",
+    description:
+      "Created a 3D visualization of Solar System using ThreeJS and GSAP",
     imageUrl: ProjectUrl1,
   },
   {
