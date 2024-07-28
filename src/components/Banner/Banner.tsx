@@ -1,8 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { HeaderIcon } from "../../assets/images";
 import { useEffect, useState } from "react";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+import { ArrowCircle } from "../../assets/images";
 import "./Banner.css";
+
 import { banerIntroduction } from "../../Data/DataTemplates";
 
 const Banner = () => {
@@ -60,13 +61,17 @@ const Banner = () => {
             <p>{banerIntroduction.introduction}</p>
             <a href="#connect">
               <button>
-                <ArrowRightCircle />
+                <img src={ArrowCircle} alt="" className="arrow-left-circle" />
                 Let's Connect
               </button>
             </a>
           </Col>
           <Col xs={12} md={6} xl={5}>
-            <img src={HeaderIcon} alt="header image" />
+            <img
+              src={HeaderIcon}
+              alt="header image"
+              className="floating-astronaut"
+            />
           </Col>
         </Row>
       </Container>

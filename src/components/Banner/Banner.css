@@ -66,7 +66,7 @@
   margin-left: 25px;
 }
 
-.banner img {
+.banner .floating-astronaut {
   animation: bannerImageAnimation 3s linear infinite;
   width: 100%;
 }
@@ -88,4 +88,10 @@
 .txt-rotate > .wrap {
   border-right: 2px solid #666;
   padding-right: 5px;
+}
+
+.arrow-left-circle {
+  height: 34px;
+  width: 34px;
+  transform: rotate(180deg);
 }

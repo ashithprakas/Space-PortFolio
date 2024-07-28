@@ -13,6 +13,7 @@ import SolarSystem from "./Projects/SolarSystem.png";
 import GitHubLink from "./github-link.png";
 import WebsiteLink from "./website-link.png";
 import MyResume from "./Resume/Ashith_Resume.pdf";
+import ArrowCircle from "./arrow-circle.png";
 export {
   Logo,
   LinkedInIcon,
@@ -29,4 +30,5 @@ export {
   GitHubLink,
   WebsiteLink,
   MyResume,
+  ArrowCircle,
 };

@@ -19,7 +19,10 @@ const Loader = () => {
 
   function loadTimer() {
     setTimeout(() => {
-      setLoaded(true);
+      if (!isLoaded) {
+        console.log("loaded");
+        setLoaded(true);
+      }
     }, 1000);
   }
   return (
