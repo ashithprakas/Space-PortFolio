@@ -46,7 +46,7 @@ const Projects = () => {
               >
                 {Array.from({ length: noOfPanels }, (_, index) => {
                   return (
-                    <Nav.Item>
+                    <Nav.Item key={index}>
                       <Nav.Link eventKey={index + 1}>Tab {index + 1}</Nav.Link>
                     </Nav.Item>
                   );

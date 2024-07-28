@@ -6,7 +6,6 @@ import { GitHubLink, WebsiteLink } from "../../assets/images";
 const ProjectCard: React.FC<{ projectTemplate: ProjectTemplate }> = ({
   projectTemplate,
 }) => {
-  console.log(projectTemplate.websiteUrl);
   return (
     <Col sm={6} md={4}>
       <div className="project-container">

@@ -69,10 +69,7 @@ const NavBar = () => {
               })}
             </div>
             <a href={MyResume} download>
-              <button
-                className="lets-connect-button"
-                onClick={() => console.log("lets connect")}
-              >
+              <button className="lets-connect-button">
                 <div>Download Resume</div>
                 <img src={ResumeIcon} alt="" />
               </button>

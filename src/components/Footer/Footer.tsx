@@ -6,7 +6,7 @@ import { personalInfo, socialsTemplate } from "../../Data/DataTemplates";
 const Footer = () => {
   function uploadToClipboard(text: string) {
     navigator.clipboard.writeText(text);
-    alert(text + " Has been coppied");
+    alert(text + " Has been copied");
   }
   return (
     <section>
