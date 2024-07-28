@@ -24,6 +24,7 @@ footer {
   text-align: left;
   font-weight: 500;
   font-size: 17px;
+  cursor: pointer;
 }
 
 .footer-info-container {

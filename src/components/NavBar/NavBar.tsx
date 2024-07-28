@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavBarLinkTypes } from "../../enumerations/NavBar.enums";
 import { NavBarLinkTemplate } from "../../models/NavBar.models";
-import { ResumeIcon } from "../../assets/images";
+import { MyResume, ResumeIcon } from "../../assets/images";
 import { socialsTemplate } from "../../Data/DataTemplates";
 import "./NavBar.css";
 
@@ -68,7 +68,7 @@ const NavBar = () => {
                 );
               })}
             </div>
-            <a href="#connect">
+            <a href={MyResume} download>
               <button
                 className="lets-connect-button"
                 onClick={() => console.log("lets connect")}
