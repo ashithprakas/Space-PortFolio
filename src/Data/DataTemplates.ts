@@ -36,12 +36,12 @@ export const skillsTemplateArray: SkillsSliderTemplate[] = [
   { skillName: "CSS", percentage: 80 },
   { skillName: "Angular", percentage: 80 },
   { skillName: "Typescript", percentage: 75 },
-  { skillName: "React", percentage: 90 },
+  { skillName: "React", percentage: 75 },
   { skillName: "SQL", percentage: 80 },
   { skillName: "GIT", percentage: 70 },
   { skillName: "NodeJS", percentage: 70 },
   { skillName: "Jasmine", percentage: 75 },
-  { skillName: "English", percentage: 85 },
+  { skillName: "Python", percentage: 70 },
 ];
 
 export const timeLineTemplate: TimeLineTemplate[] = [
