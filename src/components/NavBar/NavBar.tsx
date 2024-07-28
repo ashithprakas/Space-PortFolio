@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Nav, Navbar, Container } from "react-bootstrap";
+import { Nav, Navbar, Container, NavbarBrand } from "react-bootstrap";
 import { NavBarLinkTypes } from "../../enumerations/NavBar.enums";
 import { NavBarLinkTemplate } from "../../models/NavBar.models";
 import { MyResume, ResumeIcon } from "../../assets/images";
@@ -36,7 +36,8 @@ const NavBar = () => {
 
   return (
     <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
-      <Container fluid>
+      <Container className="nav-bar-container">
+        <NavbarBrand></NavbarBrand>
         <Navbar.Toggle aria-controls="basic-navbar-nav">
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
