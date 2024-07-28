@@ -33,7 +33,7 @@ const ContactForm = () => {
     //TODO:Setup Mail Server
     setTimeout(() => {
       setButtonText("Send");
-      setStatus({ success: false, message: "SET THE EMAIL SERVER !!!" });
+      setStatus({ success: false, message: "Under Maintenance" });
     }, 5000);
   };
   return (

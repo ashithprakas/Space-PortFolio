@@ -1,6 +1,7 @@
 import React from "react";
 import { ProjectTemplate } from "../../models/Projects.models";
 import { Col } from "react-bootstrap";
+import { GitHubLink, WebsiteLink } from "../../assets/images";
 
 const ProjectCard: React.FC<{ projectTemplate: ProjectTemplate }> = ({
   projectTemplate,
@@ -12,6 +13,18 @@ const ProjectCard: React.FC<{ projectTemplate: ProjectTemplate }> = ({
         <div className="project-text">
           <h4>{projectTemplate.title}</h4>
           <p>{projectTemplate.description}</p>
+          <div className="project-sources">
+            <a href={projectTemplate.githubUrl}>
+              <img className="git-image" src={GitHubLink} />
+            </a>
+            {projectTemplate.websiteUrl != undefined && (
+              <>
+                <a href={projectTemplate.websiteUrl}>
+                  <img className="web-image" src={WebsiteLink} />
+                </a>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </Col>

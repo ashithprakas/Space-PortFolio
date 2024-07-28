@@ -5,12 +5,14 @@ import HackerRankIcon from "./hackerrank.svg";
 import HeaderIcon from "./header-img.svg";
 import GradientBackground1 from "./color-sharp.png";
 import GradientBackground2 from "./color-sharp2.png";
-import ProjectUrl1 from "./project-img1.png";
-import ProjectUrl2 from "./project-img2.png";
-import ProjectUrl3 from "./project-img3.png";
 import ContactImage from "./contact-img.svg";
 import FooterBackground from "./footer-bg.png";
-
+import ResumeIcon from "./resume.png";
+import ReactPortfolio from "./Projects/ReactPortfolio.png";
+import SolarSystem from "./Projects/SolarSystem.png";
+import GitHubLink from "./github-link.png";
+import WebsiteLink from "./website-link.png";
+import MyResume from "./Resume/Ashith_Resume.pdf";
 export {
   Logo,
   LinkedInIcon,
@@ -19,9 +21,12 @@ export {
   HeaderIcon,
   GradientBackground1,
   GradientBackground2,
-  ProjectUrl1,
-  ProjectUrl2,
-  ProjectUrl3,
   ContactImage,
   FooterBackground,
+  ResumeIcon,
+  ReactPortfolio,
+  SolarSystem,
+  GitHubLink,
+  WebsiteLink,
+  MyResume,
 };

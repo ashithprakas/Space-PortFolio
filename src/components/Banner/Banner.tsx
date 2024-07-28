@@ -59,7 +59,7 @@ const Banner = () => {
             </h1>
             <p>{banerIntroduction.introduction}</p>
             <a href="#connect">
-              <button onClick={() => console.log("connect")}>
+              <button>
                 <ArrowRightCircle />
                 Let's Connect
               </button>

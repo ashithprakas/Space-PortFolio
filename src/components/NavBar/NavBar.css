@@ -12,7 +12,7 @@ nav.navbar.scrolled {
   background: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  height: 100px;
+  min-height: 100px;
   padding: 28px;
 }
 
@@ -37,6 +37,8 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-social-icon-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 18px;
 }
 
 .social-icon a {
@@ -78,21 +80,38 @@ span.navbar-social-icon-container {
     hue-rotate(346deg);
 }
 
+.nav-bar-container {
+  gap: 10px;
+}
+
 .navbar-social-icon-container button {
   font-weight: 700;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 18px 34px;
   font-size: 18px;
-  margin-left: 18px;
   position: relative;
   background-color: transparent;
   transition: 0.3s ease-in-out;
+  display: inline-flex;
+  flex-direction: row;
+  gap: 5px;
+  align-items: center;
+}
+.navbar-social-icon-container button img {
+  height: 20px;
+  width: 20px;
+  transition: 0.3s ease-in-out;
 }
 
-.navbar-social-icon-container button:hover::before {
+.navbar-social-icon-container button div {
+  margin: 0;
+  text-decoration: none;
+}
+
+.navbar-social-icon-container button::before {
   content: "";
-  width: 100%;
+  width: 0%;
   height: 100%;
   position: absolute;
   background-color: white;
@@ -101,11 +120,19 @@ span.navbar-social-icon-container {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+.navbar-social-icon-container button:hover::before {
+  width: 100%;
+  height: 100%;
+}
 
 .navbar-social-icon-container button:hover {
   color: #121212;
 }
 
+.navbar-social-icon-container button:hover img {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg);
+}
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
   outline: none;
@@ -168,4 +195,15 @@ nav.navbar :not(.collapsed) .navbar-toggler-icon {
 
 nav.navbar .collapsed .navbar-toggler-icon {
   border-color: white;
+}
+
+@media (max-width: 992px) {
+  nav.navbar {
+    padding: 0 0;
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    min-height: 100px;
+    padding: 28px;
+  }
 }

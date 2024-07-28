@@ -4,6 +4,10 @@ import { FooterBackground } from "../../assets/images";
 import { personalInfo, socialsTemplate } from "../../Data/DataTemplates";
 
 const Footer = () => {
+  function uploadToClipboard(text: string) {
+    navigator.clipboard.writeText(text);
+    alert(text + " Has been copied");
+  }
   return (
     <section>
       <footer>
@@ -15,8 +19,18 @@ const Footer = () => {
             <Col className="d-flex justify-content-center">
               <div className="footer-info-container">
                 <div className="footer-headings ">Email</div>
-                <div className="footer-content">{personalInfo.email}</div>
-                <div className="footer-content">{personalInfo.Phone}</div>
+                <div
+                  className="footer-content"
+                  onClick={() => uploadToClipboard(personalInfo.email)}
+                >
+                  {personalInfo.email}
+                </div>
+                <div
+                  className="footer-content"
+                  onClick={() => uploadToClipboard(personalInfo.Phone)}
+                >
+                  {personalInfo.Phone}
+                </div>
               </div>
             </Col>
             <Col className="d-flex justify-content-center">

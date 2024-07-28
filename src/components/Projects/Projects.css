@@ -123,6 +123,11 @@
   opacity: 1;
 }
 
+.project-container img {
+  height: 100%;
+  width: 100%;
+}
+
 .project-text h4 {
   font-size: 30px;
   font-weight: 700;
@@ -135,4 +140,28 @@
   font-weight: 400;
   font-size: 15px;
   letter-spacing: 0.8px;
+}
+
+.project-sources {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.project-sources .web-image {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.project-sources .git-image {
+  height: 48px;
+  width: 48px;
+  cursor: pointer;
+}
+
+.project-sources img:hover {
+  transition: 0.5s ease-in-out;
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%)
+    hue-rotate(346deg);
 }

@@ -2,7 +2,8 @@ import {
   GitHubIcon,
   HackerRankIcon,
   LinkedInIcon,
-  ProjectUrl1,
+  ReactPortfolio,
+  SolarSystem,
 } from "../assets/images";
 import { TimeLineTemplate } from "../models/ExperienceTimeline.models";
 import { SocialsTemplate } from "../models/NavBar.models";
@@ -19,7 +20,7 @@ export const socialsTemplate: SocialsTemplate[] = [
 ];
 
 export const banerIntroduction = {
-  tagLines: ["Angular Developer", "ReactDeveloper", "WebDeveloper"],
+  tagLines: ["FrontEnd Developer", "Angular Developer", "React Developer"],
   name: "Ashith",
   introduction: `I am a Frontend Developer with 2 years of experience. I specialize
               in Angular, creating dynamic and responsive web applications with
@@ -70,24 +71,19 @@ export const timeLineTemplate: TimeLineTemplate[] = [
 
 export const projectsArray: ProjectTemplate[] = [
   {
-    title: "Business Startup1",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
+    title: "Space Portfolio",
+    description:
+      "Desingned a space themed portfolio showcasing my skills and experiences",
+    imageUrl: ReactPortfolio,
+    githubUrl: "https://github.com/ashithprakas/Space-PortFolio",
+    websiteUrl: "https://ashithprakas.github.io/Space-PortFolio/",
   },
   {
-    title: "Business Startup1",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
-  },
-  {
-    title: "Business Startup1",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
-  },
-  {
-    title: "Business Startup1",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
+    title: "Solar System",
+    description:
+      "Created a 3D visualization of Solar System using ThreeJS and GSAP",
+    imageUrl: SolarSystem,
+    githubUrl: "https://github.com/ashithprakas/SolarSystem",
   },
 ];
 

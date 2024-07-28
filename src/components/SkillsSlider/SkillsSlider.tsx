@@ -57,11 +57,18 @@ const SkillsSlider = () => {
                 <Carousel.Item
                   interval={81000000}
                   className={index === activeIndex ? "active" : ""}
+                  key={index}
                 >
                   <Container>
                     <Row className="skill-sliders-container">
-                      {row.map((col) => (
-                        <Col xs={15} md={6} xl={3} className="Skill-meter">
+                      {row.map((col, colIndex) => (
+                        <Col
+                          xs={15}
+                          md={6}
+                          xl={3}
+                          className="Skill-meter"
+                          key={colIndex}
+                        >
                           {index === activeIndex && (
                             <>
                               <Slider percentage={col.percentage} />
