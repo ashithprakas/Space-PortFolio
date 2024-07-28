@@ -44,7 +44,7 @@ const ContactForm = () => {
             <img src={ContactImage} alt="Contact Us" />
           </Col>
           <Col md={6}>
-            <h2>Get In Touch</h2>
+            <h2>Send Me An Email</h2>
             <form onSubmit={onFormSubmit}>
               <Row>
                 <Col sm={6} className="px-1">

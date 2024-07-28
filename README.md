@@ -1,30 +1,62 @@
-# React + TypeScript + Vite
+<h1 align="center" id="title">Space Portfolio</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p id="description">Welcome to my Space Themed Portfolio! This project is a personal showcase of my work skills and experience presented through a visually engaging space theme. The design is inspired by a YouTube tutorial which I followed to create this unique and captivating portfolio.</p>
 
-Currently, two official plugins are available:
+<h2>🚀 Demo</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://ashithprakas.github.io/Space-PortFolio/](https://ashithprakas.github.io/Space-PortFolio/)
 
-## Expanding the ESLint configuration
+  
+  
+<h2>🧐 Features</h2>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Here're some of the project's best features:
 
-- Configure the top-level `parserOptions` property like this:
+*   Responsive Design: The portfolio is fully responsive and works seamlessly across different devices and screen sizes.
+*   Interactive Animations: Engaging animations and transitions to enhance user experience.
+*   Dynamic Content: Showcases projects skills and experience dynamically.
+*   Space Theme: Visually appealing space-themed design for a unique presentation.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the repository:</p>
+
+```
+git clone https://github.com/ashithprakas/Space-PortFolio.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<p>2. Navigate to the project directory:</p>
+
+```
+cd Space-PortFolio
+```
+
+<p>3. Install dependencies:</p>
+
+```
+npm install
+```
+
+<p>4. To start the development server and view it locally</p>
+
+```
+npm run dev
+```
+
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   HTML 5
+*   CSS
+*   JavaScript
+*   TypeScript
+*   React
+*   Bootstrap
+
+<h2>🛡️ Acknowledgements:</h2>
+
+*   <a href="https://youtu.be/hYv6BM2fWd8?si=nxFEitIrl_AtV-pf">Webdecoded</a> for the design inspiration and tutorials
+*   <a href="https://react.dev/">React</a> for the powerful JavaScript library.
+*   <a href="https://react-bootstrap.netlify.app/">Bootstrap</a>  for the responsive grid system and prebuilt components.
+*   <a href="https://github.com/davidhu2000/react-spinners">React Spinner</a>  for the prebuild loading spinner components.

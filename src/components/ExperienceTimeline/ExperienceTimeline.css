@@ -36,7 +36,7 @@
   width: 4px;
   height: 100%;
   background-image: linear-gradient(
-    to right,
+    to top,
     rgb(74, 47, 189),
     rgb(170, 54, 124)
   );

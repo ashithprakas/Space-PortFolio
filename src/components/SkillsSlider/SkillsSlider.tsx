@@ -3,23 +3,12 @@ import Carousel from "react-bootstrap/Carousel";
 import Slider from "./Slider";
 import { GradientBackground1 } from "../../assets/images";
 import { useEffect, useRef, useState } from "react";
-import { SkillsSliderTemplate } from "../../models/SkillsSlider.models";
 import "./SkillsSlider.css";
+import { skillsTemplateArray } from "../../Data/DataTemplates";
 
 const SkillsSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const carouselRef = useRef(null);
-
-  const skillsTemplateArray: SkillsSliderTemplate[] = [
-    { skillName: "Web Developer", percentage: 70 },
-    { skillName: "Angular", percentage: 80 },
-    { skillName: "React", percentage: 90 },
-    { skillName: "html", percentage: 75 },
-    { skillName: "css", percentage: 79 },
-    { skillName: "typescript", percentage: 75 },
-    { skillName: "javascirpt", percentage: 85 },
-    { skillName: "git", percentage: 70 },
-  ];
 
   // Split skillsTemplateArray into rows of 3 items each
   const skillsTemplate = skillsTemplateArray.reduce(() => {
@@ -56,7 +45,7 @@ const SkillsSlider = () => {
   }, []);
 
   return (
-    <section className="skill-container">
+    <section className="skill-container" id="skills">
       <Container className="skill-box">
         <Row>
           <Col>

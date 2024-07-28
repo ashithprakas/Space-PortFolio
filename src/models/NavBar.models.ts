@@ -6,7 +6,7 @@ export interface NavBarLinkTemplate {
   type: NavBarLinkTypes;
 }
 
-export interface NavBarSocialsTemplate {
+export interface SocialsTemplate {
   src: string;
   href: string;
 }

@@ -1,10 +1,10 @@
 import { Col, Container, Nav, Row, Tab, TabContainer } from "react-bootstrap";
-import { ProjectUrl1, ProjectUrl2, ProjectUrl3 } from "../../assets/images";
 import { ProjectTemplate } from "../../models/Projects.models";
 import ProjectCard from "./ProjectCard";
 import { GradientBackground1 } from "../../assets/images";
 import "./Projects.css";
 import { useEffect, useState } from "react";
+import { projectsArray } from "../../Data/DataTemplates";
 
 const Projects = () => {
   const [noOfPanels, setNoOfPanels] = useState(0);
@@ -27,7 +27,7 @@ const Projects = () => {
     );
   }, [noOfPanels]);
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <Container>
         <Row>
           <Col>
@@ -86,70 +86,3 @@ const Projects = () => {
 };
 
 export default Projects;
-const projectsArray: ProjectTemplate[] = [
-  {
-    title: "Business Startup1",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
-  },
-  {
-    title: "Business Startup2",
-    description: "Design and development",
-    imageUrl: ProjectUrl2,
-  },
-  {
-    title: "Business Startup3",
-    description: "Design and development",
-    imageUrl: ProjectUrl3,
-  },
-  {
-    title: "Business Startup4",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
-  },
-  {
-    title: "Business Startup5",
-    description: "Design and development",
-    imageUrl: ProjectUrl2,
-  },
-  {
-    title: "Business Startup6",
-    description: "Design and development",
-    imageUrl: ProjectUrl3,
-  },
-  {
-    title: "Business Startup7",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
-  },
-  {
-    title: "Business Startup8",
-    description: "Design and development",
-    imageUrl: ProjectUrl2,
-  },
-  {
-    title: "Business Startup9",
-    description: "Design and development",
-    imageUrl: ProjectUrl3,
-  },
-  {
-    title: "Business Startup10",
-    description: "Design and development",
-    imageUrl: ProjectUrl1,
-  },
-  {
-    title: "Business Startup11",
-    description: "Design and development",
-    imageUrl: ProjectUrl2,
-  },
-  {
-    title: "Business Startup12",
-    description: "Design and development",
-    imageUrl: ProjectUrl3,
-  },
-  {
-    title: "Business Startup13",
-    description: "Design and development",
-    imageUrl: ProjectUrl3,
-  },
-];

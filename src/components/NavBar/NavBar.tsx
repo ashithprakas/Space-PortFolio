@@ -1,16 +1,9 @@
 import { useEffect, useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import { NavBarLinkTypes } from "../../enumerations/NavBar.enums";
-import {
-  NavBarLinkTemplate,
-  NavBarSocialsTemplate,
-} from "../../models/NavBar.models";
-import {
-  Logo,
-  FaceBookIcon,
-  InstagramIcon,
-  LinkedInIcon,
-} from "../../assets/images";
+import { NavBarLinkTemplate } from "../../models/NavBar.models";
+import { Logo } from "../../assets/images";
+import { socialsTemplate } from "../../Data/DataTemplates";
 import "./NavBar.css";
 
 const NavBar = () => {
@@ -23,12 +16,6 @@ const NavBar = () => {
     { label: "Projects", href: "#projects", type: NavBarLinkTypes.Projects },
   ];
 
-  const navBarSocialsTemplate: NavBarSocialsTemplate[] = [
-    { src: LinkedInIcon, href: "" },
-    { src: FaceBookIcon, href: "" },
-    { src: InstagramIcon, href: "" },
-  ];
-
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -39,13 +26,11 @@ const NavBar = () => {
     };
     window.addEventListener("scroll", onScroll);
     return () => {
-      console.log("removeing scroll listeners");
       window.removeEventListener("scroll", onScroll);
     };
   }, []);
 
   const onUpdateActiveLink = (activeLinkType: NavBarLinkTypes) => {
-    console.log("updating active link to ", activeLinkType);
     setActiveLink(activeLinkType);
   };
 
@@ -78,7 +63,7 @@ const NavBar = () => {
           </Nav>
           <span className="navbar-social-icon-container">
             <div className="social-icon">
-              {navBarSocialsTemplate.map((template) => {
+              {socialsTemplate.map((template) => {
                 return (
                   <a href={template.href}>
                     <img src={template.src} alt="" />
@@ -86,12 +71,14 @@ const NavBar = () => {
                 );
               })}
             </div>
-            <button
-              className="lets-connect-button"
-              onClick={() => console.log("lets connect")}
-            >
-              Lets Connect
-            </button>
+            <a href="#connect">
+              <button
+                className="lets-connect-button"
+                onClick={() => console.log("lets connect")}
+              >
+                Lets Connect
+              </button>
+            </a>
           </span>
         </Navbar.Collapse>
       </Container>

@@ -39,6 +39,10 @@
   width: 96%;
 }
 
+.banner a {
+  text-decoration: none;
+}
+
 .banner button {
   color: white;
   font-weight: 700;
