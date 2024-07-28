@@ -6,6 +6,10 @@ const Loader = () => {
   const [isLoaded, setLoaded] = useState(false);
   useEffect(() => {
     window.addEventListener("load", loadTimer);
+    setTimeout(() => {
+      //incase page does not load even after 10sec
+      setLoaded(true);
+    }, 10000);
     return () => {
       window.removeEventListener("load", loadTimer);
     };
